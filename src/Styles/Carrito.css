@@ -1,0 +1,146 @@
+.carritos{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    background: rgba(0, 0, 0, .6);
+    z-index: 2;
+    padding-bottom: 5rem;
+    visibility: hidden;
+}
+.carrito{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.5);
+    width: 60%;
+    height: 80%;
+    padding: 1.6rem;
+    border-radius: 8px;
+    overflow: scroll;
+    transition: all 300ms ease-in-out;
+    background: #f3f0f0;
+    opacity: 0;
+    visibility: hidden;
+}
+.carrito h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.carrito.show{
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+    visibility: visible;
+}
+.carrito__close box-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    margin: 3rem 0 0 2rem;
+}
+.carrito__close:hover{
+    fill: crimson;
+}
+.carrio__center{
+    width: 98%;
+    margin: 0 auto;
+}
+.carrito__item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 1px 10px saddlebrown;
+    border-radius: 5px;
+}
+.carrito__item div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carrito__item img{
+    width: 10rem;
+}
+.carrito__item h3{
+    margin-top: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.carrito__item .price{
+    color: #1d8c36;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: -17rem;
+}
+.carrito__item box-icon{
+    fill: #1d8c36;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: .3rem;
+}
+.carrito__item .remove__item box-icon{
+    width: 60px;
+    height: 80px;
+    fill: crimson;
+    margin-top: 2rem;
+}
+.carrito__footer{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.carrito__footer h3{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.carrito__footer .btn{
+    display: inline-block;
+    padding: .3rem 1rem;
+    font-size: 1.2rem;
+    background-color: #1d8c36;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.carrito__footer .btn:hover{
+    background-color: #1d8c36;
+    color: white;
+}
+.bottom .btn{
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bottom button{
+    background-color: #1d8c36;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+.bottom div{
+    background-color: #1d8c36;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-left: -2rem;
+    border-radius: 5px;
+}
+.bottom div a{
+    color: white;
+    font-weight: 700;
+}
+.bottom div a:hover{
+    color: white;
+}
